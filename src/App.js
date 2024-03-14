@@ -1,28 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import WebData from './components/WebData';
+import MainArea from './components/MainArea';
+
 
 import { createContext, useContext, useEffect, useState } from 'react';
 
 function App() {
 
-  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Pin gas
-        </a>
-      </header>
-    </div>
+    <WebData.Provider>
+      <MainArea/>
+    </WebData.Provider>
   );
 }
 
