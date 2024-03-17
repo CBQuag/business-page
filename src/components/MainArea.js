@@ -1,6 +1,6 @@
 
 const MainArea = () => {
-    return <div>Yes</div>;
+    return <div>Ye</div>;
 }
 
 export default MainArea;
